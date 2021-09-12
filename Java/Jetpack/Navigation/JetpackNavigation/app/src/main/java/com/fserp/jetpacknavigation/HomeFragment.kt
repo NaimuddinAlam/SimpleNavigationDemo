@@ -24,6 +24,7 @@ class HomeFragment : Fragment() {
         binding.button.setOnClickListener {
             val bundle: Bundle =
                 bundleOf("user_input" to binding.editTextTextPersonName.text.toString())
+
             it.findNavController().navigate(R.id.action_homeFragment_to_secondFragment, bundle)
         }
         return binding.root
